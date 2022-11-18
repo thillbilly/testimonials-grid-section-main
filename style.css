@@ -1,0 +1,154 @@
+html {
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0 6%;
+    background-color: #edf2f8;
+}
+
+.grid-container {
+    margin: 5vh 0;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+.user-1 {
+    position: relative;
+}
+
+#big-quotation {
+    position: absolute;
+    top: 0;
+    right: 3vh;
+    z-index: 0;
+}
+
+.user {
+    border-radius: 10px;
+    padding: 3vh 4vh 4vh 4vh;
+}
+
+.user-1, .user-2, .user-4 {
+    color: white;
+}
+
+.user-1 .head {
+    border: 2px solid #a075e3;
+}
+
+.user-2 .head, .user-3 .head, .user-5 .head {
+    border: 2px solid white;
+}
+
+.user-4 .head {
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+.user-1 {
+    background-color: hsl(263, 55%, 52%);
+}
+
+.user-2 {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.user-3, .user-5 {
+    background-color: white;
+    color: hsl(217, 19%, 35%);
+    box-shadow: 2px 2px 20px hsl(217, 19%, 35%, .2);
+
+}
+
+.user-4 {
+    background-color: hsl(219, 29%, 14%);
+}
+
+.head {
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 13px;
+}
+
+.user-name {
+    position: absolute;
+    vertical-align: top;
+}
+
+.user-status {
+    font-size: 10px;
+    opacity: 50%;
+    position: relative;
+    bottom: 4px;
+}
+
+.header, .title {
+    margin-bottom: 15px;
+}
+
+.title {
+    position: inherit;
+    font-size: 1.5rem;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.content {
+    opacity: 70%;
+}
+
+@media (min-width: 1440px) {
+    .grid-container {
+        grid-template-areas: "user-1 user-1 user-2 user-5"
+                             "user-3 user-4 user-4 user-5";
+    }
+
+    #big-quotation {
+        right: 15%;
+    }
+
+    .user-1, .user-2 {
+        align-self: flex-end;
+    }
+
+    .user-3, .user-4 {
+        align-self: flex-start;
+    }
+
+    .user-1 {
+        grid-area: user-1;
+        width: 37vw;
+    }
+
+    .user-2 {
+        grid-area: user-2;
+        width: 18vw;
+    }
+
+    .user-3 {
+        grid-area: user-3;
+        width: 17.5vw;
+    }
+
+    .user-4 {
+        grid-area: user-4;
+        width: 37.5vw;
+    }
+
+    .user-5 {
+        grid-area: user-5;
+        width: 17.1vw;
+    }
+}
