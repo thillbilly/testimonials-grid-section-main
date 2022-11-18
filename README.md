@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [testimonials-grid-section-main](https://github.com/thillbilly/testimonials-grid-section-main/)
+- Live Site URL: [testimonials-grid-section-main](https://thillbilly.github.io/testimonials-grid-section-main/)
 
 ## My process
 
